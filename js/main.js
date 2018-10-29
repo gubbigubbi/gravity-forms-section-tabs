@@ -26,7 +26,7 @@ jQuery(function($) {
 				var $this = $(this);
 
 				// add a tab head link for each tab
-				tabsHead.append('<a href="#">' + $this.find('.gsection_title').html() + '</a>');
+				tabsHead.append('<a id="' + $this.attr('id') + '" href="#">' + $this.find('.gsection_title').html() + '</a>');
 
 				// move the corresponding fields to their tab body
 				var gformFields = $('<ul class="gform_fields">');
